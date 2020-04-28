@@ -1,0 +1,17 @@
+name: tutorial
+method: grid
+metric:
+  name: test_accuracy
+  goal: maximize
+parameters:
+  loss_func:
+    values: ["Adam", "SGD"]
+  batch_size:
+    values: [5, 10, 15]
+  learning_rate:
+    values: ["1e-3", "1e-5"]
+  data_augmentation:
+    values: [False, True]
+  epochs:
+    value: 65
+program: classification_with_wandb.py

@@ -1,0 +1,12 @@
+epochs:
+  value: 10
+batch_size:
+  value: 5
+learning_rate:
+  value: 1e-3
+optimizer:
+  value: "Adam"
+data_augmentation:
+  value: True
+start_features:
+  value: 4
